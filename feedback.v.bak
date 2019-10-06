@@ -1,0 +1,37 @@
+module feedback(
+	output reg [7:0]x_out,
+	input [2:0]c_place,
+	input [2:0]c_color
+	);
+	
+	reg [2:0] correct_place; //Hold the number of correct places
+	reg [2:0] correct_color; //Hold the number of correct colors
+	reg [2:0] current_state, next_state; //Keep track of FSM states
+	
+	localparam draw_one = 3'b000,
+				  draw_two = 3'b001,
+				  draw_three = 3'b011,
+				  draw_four = 3'b111,
+				  draw_five = 3'b110;
+	
+	wire drawnext; //Move on to the next draw state
+	
+	//State Table
+	always @(*)
+		begin
+			case(current_state)
+				draw_one: next_state <= drawnext ? draw_two:draw_one;
+				draw_two: next_state <= drawnext ? draw_three:draw_two;
+				draw_three: next_state <= drawnext ? draw_four:draw_three;
+				draw_four: next_state <= drawnext ? draw_five:draw_fout;
+				draw_five: next_state <= drawnext ? draw_one:draw_five;
+				default: next_state <= draw_one;
+		end
+	
+	always @(*)
+		begin
+			
+		end
+	
+	endmodule
+	

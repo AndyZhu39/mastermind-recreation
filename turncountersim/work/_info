@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/andyz/Desktop/csc258/final project 0401/turncountersim
+vturncounter
+!s110 1554242569
+!i10b 1
+!s100 9CORH;VcdzQc1o>>^CeON0
+IUIP<4>d9hFKX]`@]R^Y8d2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553884825
+8turncounter.v
+Fturncounter.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1554242569.000000
+!s107 turncounter.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|turncounter.v|
+!i113 1
+Z3 o-timescale 1ns/1ns
+Z4 tCvgOpt 0
+vturncounter2
+!s110 1554243727
+!i10b 1
+!s100 QkF5`ULN6T8=7HB4JLOO?3
+IhIE`m>l?T7ONm8h[>MDLN3
+R1
+R0
+w1554243726
+8turncounter2.v
+Fturncounter2.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1554243727.000000
+!s107 turncounter2.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|turncounter2.v|
+!i113 1
+R3
+R4
